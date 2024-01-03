@@ -1,0 +1,50 @@
+Feature: Calculadora # features/calculadora.feature:1
+  Como usuario
+  Quiero realizar la operacion de suma en la calculadora
+  Para verificar que los calculos sean correctos
+  Scenario Outline: Suma dos numeros -- @1.1   # features/calculadora.feature:15
+    Given ingreso el numero uno "1"            # steps/calculadora.py:4
+    And ingreso el numero dos "3"              # steps/calculadora.py:8
+    When presiono el boton suma                # steps/calculadora.py:13
+    Then el resultado deberia ser "4"          # steps/calculadora.py:17
+
+  Scenario Outline: Suma dos numeros -- @1.2   # features/calculadora.feature:16
+    Given ingreso el numero uno "2"            # steps/calculadora.py:4
+    And ingreso el numero dos "3"              # steps/calculadora.py:8
+    When presiono el boton suma                # steps/calculadora.py:13
+    Then el resultado deberia ser "5"          # steps/calculadora.py:17
+
+  Scenario Outline: Suma dos numeros -- @1.3   # features/calculadora.feature:17
+    Given ingreso el numero uno "10"           # steps/calculadora.py:4
+    And ingreso el numero dos "10"             # steps/calculadora.py:8
+    When presiono el boton suma                # steps/calculadora.py:13
+    Then el resultado deberia ser "20"         # steps/calculadora.py:17
+
+  Scenario Outline: Suma dos numeros -- @1.4   # features/calculadora.feature:18
+    Given ingreso el numero uno "1"            # steps/calculadora.py:4
+    And ingreso el numero dos "11"             # steps/calculadora.py:8
+    When presiono el boton suma                # steps/calculadora.py:13
+    Then el resultado deberia ser "12"         # steps/calculadora.py:17
+
+  Scenario Outline: Suma dos numeros -- @1.5   # features/calculadora.feature:19
+    Given ingreso el numero uno "111"          # steps/calculadora.py:4
+    And ingreso el numero dos "10"             # steps/calculadora.py:8
+    When presiono el boton suma                # steps/calculadora.py:13
+    Then el resultado deberia ser "121"        # steps/calculadora.py:17
+
+  Scenario Outline: Suma dos numeros -- @1.6   # features/calculadora.feature:20
+    Given ingreso el numero uno "100"          # steps/calculadora.py:4
+    And ingreso el numero dos "11"             # steps/calculadora.py:8
+    When presiono el boton suma                # steps/calculadora.py:13
+    Then el resultado deberia ser "111"        # steps/calculadora.py:17
+
+  Scenario Outline: Suma dos numeros -- @1.7   # features/calculadora.feature:21
+    Given ingreso el numero uno "200"          # steps/calculadora.py:4
+    And ingreso el numero dos "100"            # steps/calculadora.py:8
+    When presiono el boton suma                # steps/calculadora.py:13
+    Then el resultado deberia ser "300"        # steps/calculadora.py:17
+
+1 feature passed, 0 failed, 0 skipped
+7 scenarios passed, 0 failed, 0 skipped
+28 steps passed, 0 failed, 0 skipped, 0 undefined
+Took 0m0.015s
